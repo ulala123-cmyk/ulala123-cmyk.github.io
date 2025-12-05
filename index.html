@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YHS - A Better School for Me</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font */
+            margin: 0;
+            padding: 0;
+            background-color: #f8d8e8; /* Light pink background */
+            color: #4e4e4e;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #ff7f7f; /* Soft pink */
+            color: white;
+            text-align: center;
+            padding: 40px;
+            border-bottom-left-radius: 50% 20px;
+            border-bottom-right-radius: 50% 20px;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        /* Main Content Styling */
+        #main-content {
+            padding: 20px;
+            background-color: white;
+            max-width: 800px;
+            margin: 30px auto;
+            border-radius: 15px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #ff6fb2; /* Bright pink */
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .reasons ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 20px 0;
+        }
+
+        .reasons li {
+            margin: 10px 0;
+            font-size: 1.3em;
+            background-color: #ffe0e0; /* Soft pink for list items */
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: #ff6fb2; /* Bright pink */
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            border-radius: 30px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff4883; /* Slightly darker pink on hover */
+        }
+
+        /* Hidden Emotional Appeal */
+        #emotional-appeal {
+            background-color: #ffcccc; /* Soft, cute pink background */
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 15px;
+            color: #e74c3c;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            font-size: 1.2em;
+            color: #4e4e4e;
+            padding: 20px;
+            background-color: #ffebeb; /* Very light pink background */
+            border-top-left-radius: 50% 20px;
+            border-top-right-radius: 50% 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dear Apa,</h1>
+        <p>I Have a Special Request!</p>
+    </header>
+
+    <section id="main-content">
+        <h2>Why?</h2>
+        <p>As you know, my board exams are coming up, and I want to make sure I am fully prepared, because currently i cannot study properly at school. I believe that transferring to <strong>YHS in Thimphu</strong> will help me in studying, as well as doing other extra curricular activities..</p>
+
+        <div class="reasons">
+            <h3>Here’s why:</h3>
+            <ul>
+                <li><strong>Better Environment:</strong> YHS offers a focused, calm atmosphere that will help me study better.</li>
+                <li><strong>Expert teachers:</strong> The teachers at YHS are known for their experience and teaching methods that align with board exam patterns.</li>
+                <li><strong> Thimphu:</strong> Being in Thimphu will allow me to spend more time with you, ama tashi, lhaki, aiela and meme!</li>
+            </ul>
+        </div>
+
+        <button id="emotional-appeal-btn">Apa, please consider this.</button>
+
+        <div id="emotional-appeal" class="hidden">
+            <p>It’s really important to me, and I believe this change will make all the difference. I want to make you proud, Apa!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Thank you for considering my request, Apa. I love you!</p>
+    </footer>
+
+    <script>
+        // Function to display the emotional appeal when the button is clicked
+        document.getElementById('emotional-appeal-btn').addEventListener('click', function() {
+            var emotionalAppeal = document.getElementById('emotional-appeal');
+            emotionalAppeal.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
